@@ -27,7 +27,7 @@ function PostDetail() {
                 <>
                     <h2 className="post-title">{post.title}</h2>
                     {post.author && <p className="post-meta">By {post.author}</p>}
-                    {post.created && <p className="post-meta">{post.created}</p>}
+                    {post.created && <p className="post-meta">{post.created.slice(0, 10)}</p>}
                     <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
                 </>
             ) : (

@@ -5,6 +5,7 @@
     margin: 0 auto; 
     padding: 2rem; 
     animation: fadeIn 1s;
+    padding-top: 70px;
 }
 
 @keyframes fadeIn {
@@ -25,15 +26,16 @@
     flex-wrap: wrap;
     justify-content: space-between; 
     gap: 1rem;
+  
 }
 
 .post-card {
-    background-color: #ffffff; 
-    margin-bottom: 2rem; 
-    padding: 1.5rem; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    width: calc(50% - 1rem);
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
     transition: transform 0.3s ease;
 }
 
