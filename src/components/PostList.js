@@ -3,7 +3,6 @@ import {fetchPosts} from '../api/posts';
 import {Link} from 'react-router-dom';
 import '../PostList.css';
 
-
 function PostList() {
     const [posts, setPosts] = useState([]);
 

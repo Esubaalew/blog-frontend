@@ -1,34 +1,51 @@
 /* PostList.css */
 
 .post-list-container {
-    width: 70%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 2rem; /* Add some padding for spacing */
+    width: 70%;
+    margin: 0 auto; 
+    padding: 2rem; 
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .post-list-title {
-    text-align: center; /* Center the title text */
-    margin-bottom: 2rem; /* Add space below the title */
+    text-align: center; 
+    margin-bottom: 2rem; 
+    color: #333;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #aaa;
 }
 
 .post-list {
-    display: flex; /* Arrange posts in a row */
-    flex-wrap: wrap; /* Allow posts to wrap to the next line */
-    justify-content: space-between; /* Distribute space evenly between posts */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 1rem;
 }
 
 .post-card {
-    background-color: #ffffff; /* White background for posts */
-    margin-bottom: 2rem; /* Add space between posts */
-    padding: 1.5rem; /* Add padding for post content */
-    border-radius: 15px; /* Add rounded corners for a softer look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 45%; /* Adjust card width as needed */
+    background-color: #ffffff; 
+    margin-bottom: 2rem; 
+    padding: 1.5rem; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: calc(50% - 1rem);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .post-title {
-    font-size: 1.5rem; /* Increase title font size */
-    margin-bottom: 1rem; /* Add some space below the title */
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+    color: #0056b3;
 }
 
 .post-meta {
@@ -40,15 +57,17 @@
 }
 
 .post-content {
-    text-align: center;
+    text-align: justify;
     line-height: 1.6;
 }
 
 .post-content a {
     color: #007bff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .post-content a:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
