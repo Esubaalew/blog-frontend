@@ -1,0 +1,54 @@
+/* PostList.css */
+
+.post-list-container {
+    width: 70%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2rem; /* Add some padding for spacing */
+}
+
+.post-list-title {
+    text-align: center; /* Center the title text */
+    margin-bottom: 2rem; /* Add space below the title */
+}
+
+.post-list {
+    display: flex; /* Arrange posts in a row */
+    flex-wrap: wrap; /* Allow posts to wrap to the next line */
+    justify-content: space-between; /* Distribute space evenly between posts */
+}
+
+.post-card {
+    background-color: #ffffff; /* White background for posts */
+    margin-bottom: 2rem; /* Add space between posts */
+    padding: 1.5rem; /* Add padding for post content */
+    border-radius: 15px; /* Add rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 45%; /* Adjust card width as needed */
+}
+
+.post-title {
+    font-size: 1.5rem; /* Increase title font size */
+    margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.post-content {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.post-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
